@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.header {
+    height: 51px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.header i {
+
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.tabs{
+    background-color: #ccc;
+    width:fit-content;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.tabs input{
+    appearance: none;
+}
+
+.tabs label{
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+
+.tabs input:checked + label{
+    background-color: black;
+    color: white;
+}
+
+
+.todos{
+    width: 90%;
+    height: auto;
+    min-height: 61px;
+    /* background-color: #ccc; */
+    margin-top: 20px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.todos p span{
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.todoContainer{
+    background-color: white;
+    padding: 16px;
+    margin-top: 8px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todoContainer i {
+    cursor: pointer;
+}
+
+.titleContainer{
+    display: flex;
+    gap: 12px;
+}
+
+.chip-text{
+    background-color: #FFCE00;
+    padding: 0 6px;
+    border-radius: 12px;
+    color: black;
+}
+
+.chip-text.High{
+    background-color: #e5bfc3;
+}
+.chip-text.Medium{
+    background-color: #c6c2ee;
+}
+.chip-text.Low{
+    background-color: #d7ffbe;
+}
+
+.search-input{
+    border: none;
+}
+
+.search-input:focus{
+    border: none;
+    box-shadow: none;
+}
+
+.side-model{
+    overflow-y: scroll;
+}
+
+.no-task{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 5vw;
+    color: #FFCE00;
+    cursor: pointer;
+}
